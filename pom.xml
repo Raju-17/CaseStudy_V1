@@ -13,6 +13,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  
 
   <dependencies>
     <dependency>
@@ -22,4 +24,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+   <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>visa_rel1.0</id>
+      <name>visa_rel1.0</name>
+      <url>http://172.31.41.28:8081/nexus/content/repositories/visa_rel1.0/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>visa_snapshot</id>
+      <name>visa_snapshot</name>
+      <url>http://172.31.41.28:8081/nexus/content/repositories/visa_snapshot/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
