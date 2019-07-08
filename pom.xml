@@ -28,9 +28,9 @@
    <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      <id>visa_rel1.0</id>
-      <name>visa_rel1.0</name>
-      <url>http://13.126.43.209:8081/nexus/content/repositories/visa_rel1.0/</url>
+      <id>visa_rel</id>
+      <name>visa_rel</name>
+      <url>http://13.126.43.209:8081/nexus/content/repositories/visa_rel/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
