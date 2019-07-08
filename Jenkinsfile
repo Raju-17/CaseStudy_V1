@@ -1,9 +1,8 @@
 node {
    def mvnHome
-   stage('Checkout') { // for display purposes
+   stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      //checkout([$class: 'GitSCM', doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '6f8af427-afa3-4493-b0d3-6948b22eb355', 
-                                    // url: 'https://github.com/Raju-17/CaseStudy_V1.git']]])
+      
        git 'https://github.com/Raju-17/CaseStudy_V1.git'
       // Get the Maven tool.
       // ** NOTE: This 'maven-3.6.1' Maven tool must be configured
