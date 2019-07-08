@@ -23,15 +23,5 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
-   
-  stage('sonar-qube') {
-      // Run the maven build
-      withSonarQubeEnv(["MVN_HOME=$mvnHome"]) {
-         if (isUnix()) {
-            sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore sonar:soanr -Dsonar.host.url=http://ec2-13-233-157-115.ap-south-1.compute.amazonaws.com:9000/'
-         } else {
-            bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore sonar:soanr -Dsonar.host.url=http://ec2-13-233-157-115.ap-south-1.compute.amazonaws.com:9000/')
-         }
-      }
-   }      
+         
 }
