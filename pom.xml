@@ -43,9 +43,9 @@
    <project.scm.id>git</project.scm.id>
 </properties>
 <scm>     
-    <url>https://github.com/rishabh20111990/maven-myapp/tree/master/src</url>   
-    <connection>scm:git:https://github.com/rishabh20111990/maven-myapp.git</connection>
- <developerConnection>scm:git:https://github.com/rishabh20111990/maven-myapp.git</developerConnection>
+    <url>https://github.com/Raju-17/CaseStudy_V1/tree/visa/src</url>   
+    <connection>scm:https://github.com/Raju-17/CaseStudy_V1.git</connection>
+ <developerConnection>scm:git:https://github.com/Raju-17/CaseStudy_V1.git</developerConnection>
    <tag>HEAD</tag>
 </scm>
 
