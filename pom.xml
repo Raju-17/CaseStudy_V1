@@ -29,13 +29,13 @@
 <distributionManagement>
 
   <repository>
-    <id>vcard-release</id>
-    <url>http://52.66.200.7:8081/nexus/content/repositories/vcard-release</url>
+    <id>visa_</id>
+    <url>http://52.66.200.7:8081/nexus/content/repositories/visa_rel</url>
   </repository>
   
     <snapshotRepository>
-    <id>vcard-snapshot</id>
-    <url>http://52.66.200.7:8081/nexus/content/repositories/vcard-snapshot</url>
+    <id>visa_snapshot</id>
+    <url>http://52.66.200.7:8081/nexus/content/repositories/visa_snapshot</url>
   </snapshotRepository>
   
 </distributionManagement>
