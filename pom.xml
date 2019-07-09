@@ -43,13 +43,11 @@
       <id>visa_rel</id>
       <name>visa_rel</name>
       <url>http://52.66.200.7:8081/nexus/content/repositories/visa_rel/</url>
-      <layout>default</layout>
     </repository>
     <snapshotRepository>
       <id>visa_snapshot</id>
       <name>visa_snapshot</name>
       <url>http://52.66.200.7:8081/nexus/content/repositories/visa_snapshot/</url>
-      <layout>legacy</layout>
     </snapshotRepository>
   </distributionManagement>
       </profile>
