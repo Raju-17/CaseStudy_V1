@@ -1,19 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>Visa_Proj</groupId>
-  <artifactId>Visa_package</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-
-  <name>Visa_package</name>
-  <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-  
+  <version>1.13-SNAPSHOT</version>
+  <name>my-app</name>
   <repositories>
     <repository>
       <id>my-repo2</id>
@@ -25,9 +16,7 @@
       <name>your custom repo</name>
       <url>http://maven.apache.org</url>
     </repository>
- </repositories>  
-  
-
+</repositories> 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -36,20 +25,28 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <profiles>
-    <profile>
-   <distributionManagement>
-    <repository>
-      <id>visa_rel</id>
-      <name>visa_rel</name>
-      <url>http://52.66.200.7:8081/nexus/content/repositories/visa_rel/</url>
-    </repository>
+
+<distributionManagement>
+
+  <repository>
+    <id>vcard-release</id>
+    <url>http://52.66.200.7:8081/nexus/content/repositories/vcard-release</url>
+  </repository>
+  
     <snapshotRepository>
-      <id>visa_snapshot</id>
-      <name>visa_snapshot</name>
-      <url>http://52.66.200.7:8081/nexus/content/repositories/visa_snapshot/</url>
-    </snapshotRepository>
-  </distributionManagement>
-      </profile>
-  </profiles>
+    <id>vcard-snapshot</id>
+    <url>http://52.66.200.7:8081/nexus/content/repositories/vcard-snapshot</url>
+  </snapshotRepository>
+  
+</distributionManagement>
+<properties>
+   <project.scm.id>git</project.scm.id>
+</properties>
+<scm>     
+    <url>https://github.com/rishabh20111990/maven-myapp/tree/master/src</url>   
+    <connection>scm:git:https://github.com/rishabh20111990/maven-myapp.git</connection>
+ <developerConnection>scm:git:https://github.com/rishabh20111990/maven-myapp.git</developerConnection>
+   <tag>HEAD</tag>
+</scm>
+
 </project>
