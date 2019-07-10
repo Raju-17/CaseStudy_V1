@@ -4,7 +4,7 @@
                       https://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>visa_snapshot</id>
+      <id>admin-nexus</id>
       <username>admin</username>
       <password>admin</password>
     </server>
