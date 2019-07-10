@@ -50,7 +50,7 @@
 
   <snapshotRepository>
     <id>visa_snapshot</id>
-    <url>http://13.127.165.163:8081/nexus/content/repositories/visa_snapshot</url>
+    <url>http://13.127.165.163:8081/nexus/content/repositories/visa_snapshot/</url>
   </snapshotRepository>
   
 </distributionManagement>
